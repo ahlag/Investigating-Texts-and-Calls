@@ -1,0 +1,46 @@
+Run time analysis (Worst Case Big-O Notation) of my solution
+-----------------------------------------------------------------------------
+Task0:
+
+There are two print statements that print the first and the last records.
+Print statement runs in constant time.
+
+O(1)
+
+-----------------------------------------------------------------------------
+Task1:
+
+There are two for loops. Each for loop iterates n items. In total, the code runs 2n items.
+
+0(2n) ~ O(n)
+
+-----------------------------------------------------------------------------
+Task2:
+
+There is one for loop to create time_spent_dict. This loop iterates over all call list, n items.
+Then one for loop iterates the dict n items to identify the call number of longest time with max() method.
+
+O(2n) ~ O(n)
+
+
+-----------------------------------------------------------------------------
+Task3:
+
+Part A 
+Two nested for loops(n^2) are used to create the list bangalore (we are checking the bangalore item) and sorted() method's big O is n log n. Next, one for loop for(n) for printing the list, so big O of Part A is n^2 + nlogn.
+
+O(n^2 + nlogn)
+
+Part B
+One for loop is used to select the calls from Bangalore to Bangalore, so big O of Part B is n.
+
+O(n)
+
+-----------------------------------------------------------------------------
+Task4:
+
+Two for loops are used to iterate calls list and texts list. Each loop iterates n items. Big O is n + n = 2n. X is the unique call number. We sort the list in lexicographical order so the big O is x log x.
+
+O(2n + x log x) ~ O(n + blog x)
+
+
